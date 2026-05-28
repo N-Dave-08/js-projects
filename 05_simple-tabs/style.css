@@ -1,0 +1,24 @@
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tab {
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: aqua;
+}
