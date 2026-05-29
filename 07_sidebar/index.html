@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <h2>Sidebar</h2>
+    <div class="container">
+      <ul class="items">
+        <li data-sidebar-item-id="#home" class="item active">Home</li>
+        <li data-sidebar-item-id="#about" class="item">About</li>
+        <li data-sidebar-item-id="#legal" class="item">Legal</li>
+      </ul>
+
+      <div class="sidebar-content">
+        <div id="home" data-sidebar-content class="active">
+          <h2>Home</h2>
+          <p>This is home</p>
+        </div>
+        <div id="about" data-sidebar-content>
+          <h2>About</h2>
+          <p>This is about</p>
+        </div>
+        <div id="legal" data-sidebar-content>
+          <h2>Legal</h2>
+          <p>This is legal</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
