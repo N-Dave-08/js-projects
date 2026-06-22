@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  opacity: 0;
+
+  transform: translate(-50%, -50%) scale(0.8);
+  transition:
+    transform 200ms ease,
+    opacity 200ms ease;
+
+  border: 1px solid black;
+  border-radius: 1rem;
+  z-index: 10;
+  background-color: white;
+  width: 30rem;
+  max-width: 80%;
+  padding: 1rem;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+}
+
+.modal-header .close-button:hover {
+  background: rgb(235, 235, 235);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 300ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.37);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
