@@ -42,7 +42,7 @@
   font-weight: bold;
 }
 
-.modal-header .close-button {
+.close-button {
   cursor: pointer;
   border: none;
   outline: none;
@@ -50,7 +50,7 @@
   font-size: 1.25rem;
 }
 
-.modal-header .close-button:hover {
+.close-button:hover {
   background: rgb(235, 235, 235);
 }
 
