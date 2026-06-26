@@ -7,30 +7,52 @@
     <script src="game.js" type="module"></script>
     <style>
       body {
+        /* Fill the entire browser window */
         min-height: 100vh;
         width: 100vw;
+
+        /* Center the game board */
         display: flex;
         align-items: center;
+
+        /* Remove the browser's default margin */
         margin: 0;
+
+        /* Black background around the board */
         background-color: black;
       }
 
       #game-board {
+        /* Light gray game area */
         background-color: #ccc;
+
+        /* Keep the board perfectly square */
         width: 100vmin;
         height: 100vmin;
+
+        /* CSS Grid lets us place snake and food using (x, y) coordinates */
         display: grid;
+
+        /* Create 36 equal rows */
         grid-template-rows: repeat(36, 1fr);
+
+        /* Create 36 equal columns */
         grid-template-columns: repeat(36, 1fr);
       }
 
       .snake {
+        /* Blue color for each snake segment */
         background-color: blue;
+
+        /* Thin border so segments are easier to distinguish */
         border: 0.25vmin solid black;
       }
 
       .food {
+        /* Yellow color for the food */
         background-color: yellow;
+
+        /* Same border style as the snake */
         border: 0.25vmin solid black;
       }
     </style>
